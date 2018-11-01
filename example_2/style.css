@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Pacifico');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    padding-top: 90px;
+    padding-bottom: 30px;
+    text-align: justify;
+    font-family: 'Cabin', sans-serif;
+}
+#zen-supporting div {
+    min-width: 780px;
+    width: 60%;
+    margin: auto;
+    border-bottom: 1px solid appworkspace;
+}
+#zen-supporting div:first-of-type {
+    border-top: 1px solid appworkspace;    
+}
+#zen-supporting div h3 {
+    font-size: 1.5em;
+}
+#zen-supporting div p {
+    line-height: 2em;
+}
+#zen-supporting div p a {
+    color: crimson;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+#zen-supporting div p a:hover {
+    color: #800000;
+    animation-name: link-animation;
+    animation-duration: 1s;
+}
+@keyframes link-animation {
+    from {color: crimson;}
+    to {color: #800000;}
+}
+#zen-supporting footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 139, 139, .5);
+    color: aliceblue;
+    padding: 5px;
+    text-align: center;
+} 
+#zen-supporting footer a {
+    text-decoration: none;   
+    color: aliceblue;
+    margin: 0 10px;
+}
+#zen-supporting footer a:hover {
+    text-decoration: underline;
+}
+.intro .summary {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  width: 70%;
+  margin: auto;
+  margin-bottom: 70px;
+  font-size: 1.6em;
+}
+.intro .summary:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+.intro .summary p {
+  display: inline;
+}
+p {
+    padding: 5px;
+}
+.intro h1 {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: 4em;
+    margin-bottom: 5px;
+}
+.intro h2 {
+    text-align: center;
+    font-size: 2em;
+}
+.intro:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.intro .preamble {
+    margin-bottom: 30px;
+}
+.intro .preamble h3 {
+    text-align: center;
+}
+.intro .preamble p {
+    display: inline-block;
+    width: 28%;
+    vertical-align: top;
+    border: 3px dotted appworkspace;
+    border-radius: 3px;
+    margin: 1%;
+    font-size: .9em;
+}
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    background-color: rgba(255,255,240, .2);
+}
+.sidebar ul {
+    list-style: none;
+}
+.sidebar ul li {
+    float: left;
+    margin: 3px;
+    padding: 3px;
+    border: 1px solid appworkspace;
+}
+.sidebar ul li:hover {
+    cursor: pointer;
+    background-color: lightsteelblue;
+    animation-name: sidebar-animation;
+    animation-duration: .3s;
+}
+@keyframes sidebar-animation {
+    from {background-color: white;}
+    to {background-color: lightsteelblue;}
+}
+
+.sidebar ul li, .sidebar ul li a {
+    color: black;
+    text-decoration: none;
+}
+.sidebar h3 {
+    float: left;
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    text-indent: 15px;
+}
+.sidebar nav {
+    float: left;
+    width: 80%;
+}
+.sidebar ul {
+    margin: 0;
+    padding: 0;
+}
+.sidebar .wrapper div {
+    margin: 5px 0;
+    padding: 5px 0;
+    border-bottom: 1px dotted black;
+}
+.sidebar .wrapper div:after {
+  content: "";
+  display: table;
+  clear: both;
+}
