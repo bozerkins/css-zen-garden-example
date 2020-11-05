@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&family=Trispace&display=swap');
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Times New Roman';
+}
+h1, section.intro h2 {
+	font-family: 'Syne Mono', monospace;
+}
+h2, h3, h4, h5 {
+	font-family: 'Trispace', sans-serif;
+}
+div.page-wrapper {
+	padding-top: 45px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+aside.sidebar {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+	background-color: gray;
+	height: 45px;
+}
+aside.sidebar nav, aside.sidebar div.zen-resources ul {
+	display: none;
+}
+aside.sidebar h3 {
+	font-size: 10px;
+}
+aside.sidebar div.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+aside.sidebar div.wrapper > div {
+	padding: 5px 15px;
+	position: relative;
+	width: 20%;
+}
+aside.sidebar div.wrapper > div:hover {
+	background-color: lightgrey;
+	cursor: pointer;
+} 
+aside.sidebar div.wrapper > div:hover nav,
+aside.sidebar div.wrapper > div.zen-resources:hover ul {
+	display: block;
+	position: absolute;
+	top: 41px;
+	left: 0;
+	background-color: lightgrey;
+	font-size: 10px;
+	width: 100%;
+}
+aside.sidebar div.wrapper ul {
+	margin: 0;
+	list-style-type: none;
+	padding: 1px 0;
+}
+aside.sidebar div.wrapper ul li {
+	padding: 5px 2px;
+}
+aside.sidebar div.wrapper ul li:hover {
+	background-color:#ededed;
+}
+aside.sidebar div.wrapper ul a {
+	color: inherit;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer a {
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+	color: transparent;
+	background-repeat: no-repeat;
+	background-size: 30px 30px;
+	background-position: center;
+	display: none;
+}
+footer a.zen-validate-html {
+	background-image: url("img/html5.png");
+	display: block;
+}
+footer a.zen-validate-css {
+	background-image: url("img/css.png");
+	background-size: 25px 30px;
+	display: block;
+}
+p {
+	font-size: 10px;
+	text-align: justify;
+}
+
+#zen-summary {
+	border-bottom: 1px solid black;
+	padding-bottom: 20px;
+}
+#zen-preamble {
+	border-bottom: 1px solid black;
+	padding-bottom: 20px;
+}
+#zen-preamble::after {
+content: "";
+clear: both;
+display: table;
+}
+#zen-preamble p:nth-of-type(2), #zen-preamble p:nth-of-type(3) {
+	float: left;
+	width: 45%;
+	padding: 0 10px;
+	display: block;
+}
