@@ -1,0 +1,78 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+/* basic elements */
+
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+h1, h2, h3, h4, h5 {
+	font-family: 'Syne Mono', monospace;
+}
+header {
+	padding: 100px 30px;
+	font-size: 2rem;
+	background-image: url(../img/mountain.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: white;
+  	text-shadow: 2px 2px 4px black;
+	  box-shadow: 0 10px 10px grey;
+}
+.page-wrapper {
+	display: flex;
+	align-content: flex-start;
+	flex-wrap: wrap;
+}
+#zen-intro {
+	width: 100%;
+}
+#zen-supporting {
+	width: 70%;
+}
+.sidebar {
+	margin: 5px 0 0 10px;
+	padding: 5px;
+	flex-grow: 1;
+	background: linear-gradient(140deg, #476b83 0%, #8fa2b0 50%, #cbcac8 75%);
+	color: white;
+	text-shadow: 2px 2px 4px black;
+}
+.sidebar ul li a {
+	color: white;
+}
+.sidebar ul {
+	list-style-type: none;
+	margin: 10px 0;
+	padding: 0;
+}
+.sidebar ul li {
+	padding: 5px 0 5px 10px;
+	transition: background-color .3s, padding-left .3s;
+}
+.sidebar ul li:hover {
+	padding-left: 20px;
+	background-color: rgba(203, 202, 200, 0.5);
+}
+
+#zen-summary {
+	width: 30%; 
+	float: left;
+}
+#zen-preamble {
+	width: 70%; 
+	float: right;
+}
+#zen-supporting {
+	padding-left: 10px;
+}
+/* #zen-explanation p:nth-of-type(1) {
+	padding-left: 10px;
+} */
